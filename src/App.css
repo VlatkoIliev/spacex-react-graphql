@@ -1,38 +1,94 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: dodgerblue;
+  color: white;
+  position: fixed;
+}
+.logo {
+  padding-left: 50px;
+}
+.mission-container {
+  padding-top: 120px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: lightskyblue;
+}
+
+.mission-list,
+.rocket-list,
+.ship-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.mission-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+}
+
+.ship-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.ship-list > li {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ships-title {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mission-card,
+.rocket-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rocket-details {
+  padding-top: 100px;
+  background-color: lightblue;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.rocket-card {
+  height: 400px;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 20px;
+  padding-left: 50px;
+}
+.main {
+  width: 70%;
+}
+.sidebar {
+  padding: 20px;
+  border-left: 1px solid grey;
+  background-color: white;
+  width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mission-data {
+  padding: 10px;
+}
+
+.first-stage-list,
+.second-stage-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
